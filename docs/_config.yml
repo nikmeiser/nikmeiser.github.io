@@ -113,6 +113,7 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # url: http://idratherbewriting.com
 # baseurl: /documentation-theme-jekyll
 
+baseurl: /nikmeiser.github.io
 domain: nikmeiser.github.io
 url: https://nikmeiser.github.io
 gem "github-pages", "~> 227", group: :jekyll_plugins
