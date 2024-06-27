@@ -18,9 +18,10 @@ collections:
 nav:
   - title: "Home"
     url: /
-  - title: "Blog"
-    url: /blog/
-    children:
+  - title: "Posts"
+    url: /posts/
+    collections:
+      - posts
     
 
 color_scheme: light_pink
