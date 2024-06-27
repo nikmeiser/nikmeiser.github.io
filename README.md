@@ -1,4 +1,4 @@
-# nikmeiser's osteonomic accruages for the beknowelment of uskind
+# osteonomic accruages for the beknowelment of uskind
 
 - [Docs]
 - [CIPP]
