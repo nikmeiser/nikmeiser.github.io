@@ -168,7 +168,8 @@ $link-color: $pink-000;
 - under 'source', select `Github Actions` instead of 'Deploy from a branch'. This will bring up a `Configure` button for Jekyll
 - click on `Configure` and save the default values. You will be prompted to commit your changes to the `main` branch
 - the workflow shoudl kick off automatically. You can see the progress under the `Actions` tabe of your repo
-> [!NOTE]
+> ##### TIP
+>
 > remember to perform a `git pull` on your local machine after savig the Jekyll config or you will run into a merge conflict the next time you push a change
 - look for status under 'actions' and fix any errors
 ## Directory structure
