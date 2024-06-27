@@ -16,14 +16,7 @@ collections:
     permalink: /:collection/:path/
     order: title
 
-nav:
-  - title: "Home"
-    url: /
-  - title: "Blog"
-    url: /blog/
-    children:
      
-
 color_scheme: light_pink
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
