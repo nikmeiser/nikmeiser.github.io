@@ -7,7 +7,7 @@ baseurl: /blog
 
 aux_links:
 
-
+color_scheme: light_pink
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
