@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Github Pages with 'Just the docs'
-nav_order: 1
+date: 2024-06-27
+categories: [jekyll]
 ---
 # Github Pages with 'Just the docs'
 {: .no_toc }
