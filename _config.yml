@@ -10,6 +10,11 @@ plugins:
 aux_links:
   nikmeiser.github.io: https://nikmeiser.github.io
 
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+    
 nav:
   - title: "Home"
     url: /
