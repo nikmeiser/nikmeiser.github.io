@@ -19,7 +19,7 @@ categories: [jekyll]
 - git clone the repo down 
 
 ## Generate a personal access token
-- set up a [new personal access token] (PAT) under account 'settings'
+- set up a [new personal access token] \(PAT) under account 'settings'
  - give it a name (the name of the new repo)
  - Pick a token expiration
  - For Repository Access pick 'Only select repositories' and pick the repository you just created
@@ -29,6 +29,7 @@ categories: [jekyll]
 
 ## Configure the instance
 - I plan to use the jekyll-feed plug-in, so this is what my 'Gemfile' looks like this -
+
 ```yaml
 # Gemfile
 source 'https://rubygems.org'
@@ -41,9 +42,11 @@ gem "just-the-docs", "0.8.2" # pinned to the current release
 
 gem 'jekyll-feed'
 ```
+
 - update '\_config.yml'
 - create a debug_config.yml based for local debugging
 - this is what my config looks like -
+
 ```yaml
 # _config.yaml
 title: curios
@@ -67,7 +70,9 @@ gh_edit_branch: "main" # the branch that your docs is served from
 gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 ```
+
 - this is what my debug_config looks like - 
+
 ```yaml
 # debug_config.yaml
 title: curios [Debug]
@@ -94,13 +99,17 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 
 ## Running the site on your local machine
 - At the comand line navigate to your repo and run the following command to install any dependencies -
-```
+
+```bash
 bundle install
 ```
+
 - then run the following command to serve the pages locally -
-```
+
+```bash
 bundle exec jekyll serve --config debug_config.yml
 ```
+
 - Not all changes are picked up and you may need to restart the local server if you don't see your changes
 - Don't forget to copy any config changes from the debug_config to config.yml
 
@@ -111,12 +120,15 @@ bundle exec jekyll serve --config debug_config.yml
 - I did this by overriding the 'Just-the-docs' default CSS
 - I added a `_sass` directory to my project root and created a `color_schemes` directory and a `custom` directory underneath it
 - the `light_pink.scss` override uses the 'light' theme that ships with 'Just-the-docs and only changes the link color - 
+
 ```scss
 @import "./color_schemes/light";
 $pink-000: #cd0c99;
 $link-color: $pink-000;
 ```
+
 - the sidebar customizations look like this -
+
 ```scss
 
 .side-bar {
@@ -146,6 +158,7 @@ $link-color: $pink-000;
 }
 
 ```
+
 - you can find more customization options on the [Just-the-docs site]
 - you will need to add the directories for the components you override
 
@@ -160,7 +173,8 @@ $link-color: $pink-000;
 - look for status under 'actions' and fix any errors
 ## Directory structure
 - this is what my directory looks like - 
-```
+
+```plaintext
 nikmeiser.github.io
 ├── assets
 ├── _config.yml
@@ -179,6 +193,7 @@ nikmeiser.github.io
         └── custom.scss
 
 ```
+
 ## Common errors
 
 > did not find expected key while parsing a block mapping at line 1 column 1 (Psych::SyntaxError)
